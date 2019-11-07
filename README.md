@@ -13,19 +13,19 @@ Michael Chan (mkc233)
 
 # Expected Parts:
 
-Plastic (possibly 3D printed)/cardboard for the physical portion of the game (the catapult, the hoop, the court, the display housing)
+1. Plastic (possibly 3D printed)/cardboard for the physical portion of the game (the catapult, the hoop, the court, the display housing)
 
-Arduino
+2. Arduino
 
-Some type of conveyor belt like part to move the basketball hoop on the x,y, and possibly z axis.
+3. Some type of conveyor belt like part to move the basketball hoop on the x,y, and possibly z axis.
 
-Display to show score, timer, high score
+4. Display to show score, timer, high score
 
-A couple of simple buttons to start the game, pause the game, restart the game.
+5. A couple of simple buttons to start the game, pause the game, restart the game.
 
-Battery to power Arduino.
+6. Battery to power Arduino.
 
-Potentially some speakers/LEDS to improve the aesthetics.
+7. Potentially some speakers/LEDS to improve the aesthetics.
 
 
 
