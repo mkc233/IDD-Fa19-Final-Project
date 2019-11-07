@@ -9,7 +9,7 @@ The goal of this project is to create a miniature arcade basketball game similar
 Michael Chan (mkc233)
 
 # Rough Form
-![https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2204.jpg]
+[Picture]!(https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2204.jpg)
 
 # Expected Parts:
 
