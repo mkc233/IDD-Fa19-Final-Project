@@ -27,6 +27,8 @@ Michael Chan (mkc233)
 
 7. Potentially some speakers/LEDS to improve the aesthetics.
 
+8. Motion sensor to detect made shots
+
 
 
 
