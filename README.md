@@ -34,7 +34,13 @@ Michael Chan (mkc233)
 
 ![Picture](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2235.jpg)
 
-Users will press a certain button to start the game.  Play the game, and then if they make it to the leaderboard they will be able to enter in their name. 
+The arduino boots up and on the screen it displays the start menu.  Every 5 seconds this screen will change to the high score screen which shows the current high score and the name of the person who achieved that score.  Pressing select on either of these screens will take you to the select game mode screen.  Here users can either pick 1 player or 2 player mode depending on how many users are playing.  Regardless of the game mode the get ready screen will display which counts down 5 seconds before the game starts.  If in 1 player mode only the left basketball will be activate, scoring is kept by a photocell.  Prior to the game beginining the photocell takes a baseline reading.  When a basketball passes the photocell the difference between that reading and the photocell baseline determines when a basket is scored.  If in 2 player mode, both photocells and baskets will be activate.  In 1 player mode, at the end of 60 seconds the display will show the final score.  If the score is higher than the high score in the memory, it will display the enter intials screen where the user can enter 3 intials to save their score to the memory of the arduino.  States are similar in 2 player mode, first there will be a check for which users won, if player1 then the lcd screen will indicate that and the same for player2.  Then the code will check for whether or the winners score is higher than the high score, if so it will again go to the enter intials state.  After this the display will show game over, and will reset to the main menu/high score display, ready for users to start a new game. 
+
+# In Action:
+
+Start Menu/ Game mode select
+
+
 
 # Code:
 
