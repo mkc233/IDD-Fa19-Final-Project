@@ -30,7 +30,9 @@ Michael Chan (mkc233)
 
 
 
-# Interaction Plan:
+# State Diagram
+
+![Picture](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2235%20(1).jpg)
 
 Users will press a certain button to start the game.  Play the game, and then if they make it to the leaderboard they will be able to enter in their name. 
 
