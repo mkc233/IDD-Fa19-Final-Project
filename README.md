@@ -34,6 +34,8 @@ Michael Chan (mkc233)
 
 Users will press a certain button to start the game.  Play the game, and then if they make it to the leaderboard they will be able to enter in their name. 
 
+# Code:
+
 ```
 
 
