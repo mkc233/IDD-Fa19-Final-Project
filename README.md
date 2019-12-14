@@ -28,21 +28,21 @@ Michael Chan (mkc233)
 7. Motion sensor to detect made shots
 
 
-
-
 # State Diagram
 
 ![Picture](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2235.jpg)
 
 The arduino boots up and on the screen it displays the start menu.  Every 5 seconds this screen will change to the high score screen which shows the current high score and the name of the person who achieved that score.  Pressing select on either of these screens will take you to the select game mode screen.  Here users can either pick 1 player or 2 player mode depending on how many users are playing.  Regardless of the game mode the get ready screen will display which counts down 5 seconds before the game starts.  If in 1 player mode only the left basketball will be activate, scoring is kept by a photocell.  Prior to the game beginining the photocell takes a baseline reading.  When a basketball passes the photocell the difference between that reading and the photocell baseline determines when a basket is scored.  If in 2 player mode, both photocells and baskets will be activate.  In 1 player mode, at the end of 60 seconds the display will show the final score.  If the score is higher than the high score in the memory, it will display the enter intials screen where the user can enter 3 intials to save their score to the memory of the arduino.  States are similar in 2 player mode, first there will be a check for which users won, if player1 then the lcd screen will indicate that and the same for player2.  Then the code will check for whether or the winners score is higher than the high score, if so it will again go to the enter intials state.  After this the display will show game over, and will reset to the main menu/high score display, ready for users to start a new game. 
 
-# In Action:
 
-[Start Menu/ Game mode select](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2238.mp4)
+# Assembly/Coding:
 
-[Gameplay](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2241.mp4)
+Assembly was very straight forward, the base and background/rims were taken from an existing game.  The most difficult aspect was where to place the photocell to detect the the baskets going into the hoop.  I was able to find a good location underneath the net that was both effective at detecting the balls and also not very intrusive.
+![PhotoCell](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2243.JPG)
 
-[High Score Entry](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2240.mp4)
+ LEDs were added to signify which baskets are active.  A saw was used to cut out the slot for the LCD screen.  A adafruit LCD shield was used to simplfy the wiring between the arduino and LCD (https://www.adafruit.com/product/714).  I would highly recommend using this LCD shield if you are intersted in using an LCD display with an arduino.  The assembly simply requires a little soldering, and then you are left with an LCD display with 4 direction buttons and a selection button, making it very nice for user input.  
+ 
+Coding was the most difficult part of the project.   With the arduino only being able to run one program at a time, it was difficult making the display alternate between two different states.  I needed to use a blinkwithout delay method (https://www.arduino.cc/en/tutorial/BlinkWithoutDelay) to allow 
 
 
 # Overview
@@ -51,11 +51,17 @@ The arduino boots up and on the screen it displays the start menu.  Every 5 seco
 # Rims/Backboards:
 ![Close up of Rim](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2242.JPG)
 
-# Photocell locations
-![PhotoCell](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2243.JPG)
-
 # Arduino and Wiring:
 ![Wiring](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2244.JPG)
+
+
+# In Action:
+
+[Start Menu/ Game mode select](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2238.mp4)
+
+[Gameplay](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2241.mp4)
+
+[High Score Entry](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2240.mp4)
 
 
 # Code:
