@@ -38,7 +38,11 @@ The arduino boots up and on the screen it displays the start menu.  Every 5 seco
 
 # In Action:
 
-Start Menu/ Game mode select
+[Start Menu/ Game mode select](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2238.mp4)
+
+[Gameplay](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2240.mp4)
+
+[High Score Entry](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2241.mp4)
 
 
 
