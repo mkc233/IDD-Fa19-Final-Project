@@ -40,9 +40,9 @@ The arduino boots up and on the screen it displays the start menu.  Every 5 seco
 Assembly was very straight forward, the base and background/rims were taken from an existing game.  The most difficult aspect was where to place the photocell to detect the the baskets going into the hoop.  I was able to find a good location underneath the net that was both effective at detecting the balls and also not very intrusive.
 ![PhotoCell](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2243.JPG)
 
- LEDs were added to signify which baskets are active.  A saw was used to cut out the slot for the LCD screen.  A adafruit LCD shield was used to simplfy the wiring between the arduino and LCD (https://www.adafruit.com/product/714).  I would highly recommend using this LCD shield if you are intersted in using an LCD display with an arduino.  The assembly simply requires a little soldering, and then you are left with an LCD display with 4 direction buttons and a selection button, making it very nice for user input.  
+ LEDs were added to signify which baskets are active.  A saw was used to cut out the slot for the LCD screen.  A adafruit LCD shield was used to simplfy the wiring between the arduino and LCD (https://www.adafruit.com/product/714).  I would highly recommend using this LCD shield if you are intersted in using an LCD display with an arduino.  The assembly simply requires a little soldering, and then you are left with an LCD display with 4 direction buttons and a selection button, making it very nice for user input.  There are included arduino libraries as well that allow for easy use of the buttons as well as things such as changing the color the display background. 
  
-Coding was the most difficult part of the project.   With the arduino only being able to run one program at a time, it was difficult making the display alternate between two different states.  I needed to use a blinkwithout delay method (https://www.arduino.cc/en/tutorial/BlinkWithoutDelay) to allow 
+Coding was the most difficult part of the project.   With the arduino only being able to run one program at a time, it was difficult making the display alternate between two different states.  I needed to use a blinkwithout delay method (https://www.arduino.cc/en/tutorial/BlinkWithoutDelay) to allow for the screen to change display modes, while still reacting instantly to a push of the start button.  A similar techinque was used for the scorekeeping to allow for the timer to decrement, while still at the same time looking for readings from the photocell to see if baskets went in.  
 
 
 # Overview
@@ -67,8 +67,6 @@ Coding was the most difficult part of the project.   With the arduino only being
 # Code:
 
 ```
-
-
 // include the library code:
 #include <LiquidCrystal.h>
 #include <Wire.h>
