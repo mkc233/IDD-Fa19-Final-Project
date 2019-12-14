@@ -44,13 +44,19 @@ The arduino boots up and on the screen it displays the start menu.  Every 5 seco
 
 [High Score Entry](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2240.mp4)
 
+
+# Overview
+![Overview](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2245.JPG)
+
+# Rims/Backboards:
 ![Close up of Rim](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2242.JPG)
 
+# Photocell locations
 ![PhotoCell](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2243.JPG)
 
+# Arduino and Wiring:
 ![Wiring](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2244.JPG)
 
-![Overview](https://github.com/mkc233/IDD-Fa19-Final-Project/blob/master/IMG_2245.JPG)
 
 # Code:
 
